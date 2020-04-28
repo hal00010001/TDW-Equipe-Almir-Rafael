@@ -7,29 +7,23 @@ import java.util.Random;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 
-
 @Named(value = "UserNumberBean")
 @SessionScoped
 public class UserNumberBean implements Serializable {
-
     Integer randomInt;
     Integer userNumber;
     String response;
-
     public UserNumberBean() {
         Random randomGR = new Random();
         randomInt = randomGR.nextInt(10);
         System.out.println("Duke's number: " + randomInt);
     }
-
     public Integer getUserNumber() {
         return userNumber;
     }
-
-    public void setUserNumber(Integer userNumber) {
-        this.userNumber = userNumber;
-    }
-
+    public Integer getUserNumber() {
+        this.userName = userNumber;
+    }    
     public String getResponse() {
         if ((userNumber != null) && (userNumber.compareTo(randomInt) == 0)) {
 //invalidate user session
