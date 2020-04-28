@@ -29,9 +29,7 @@ public class UserNumberBean implements Serializable {
      */
     public UserNumberBean() {
         Random randomGR = new Random();
-        Integer randomInt;
-        Integer userNumber;
-        String response;
+        
         randomInt = randomGR.nextInt(10);
         System.out.println("Duke's number: " + randomInt);
     }

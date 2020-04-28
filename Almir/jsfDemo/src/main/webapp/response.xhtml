@@ -5,7 +5,7 @@
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-        <!--<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />-->
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
         <h:outputStylesheet name="css/stylesheet.css" />
 
         <title>Response</title>
@@ -16,7 +16,9 @@
 
             <div id="left" class="subContainer greyBox">
 
-                <h4>[ response here ]</h4>
+                <h4>
+                    <h:outputText escape="false" value="#{UserNumberBean.response}" />
+                </h4>
 
                 <!--<form action="index.xhtml">
 
@@ -24,9 +26,9 @@
 
                 </form>-->
 
-                <h:form>
+                <h:form prependId="false">
 
-                    <h:commandButton id="backButton" value="Back" />
+                    <h:commandButton id="backButton" value="Back" action="index" />
 
                 </h:form>
 
