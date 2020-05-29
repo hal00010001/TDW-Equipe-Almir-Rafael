@@ -20,7 +20,28 @@ public class helloBean implements Serializable {
     /**
      * Creates a new instance of helloBean
      */
+    
+    private String name;
+    
     public helloBean() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+       
+    public String getSayWelcome(){
+        //check if null?
+        if("".equals(name) || name == null){
+            return "Não deu certo!";
+        }
+        else {
+            return "Ajax message: Welcome " + name;
+        }
     }
     
 }
