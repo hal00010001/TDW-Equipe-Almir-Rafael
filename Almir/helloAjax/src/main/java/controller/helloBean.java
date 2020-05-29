@@ -37,7 +37,7 @@ public class helloBean implements Serializable {
     public String getSayWelcome(){
         //check if null?
         if("".equals(name) || name == null){
-            return "Não deu certo!";
+            return "";
         }
         else {
             return "Ajax message: Welcome " + name;
