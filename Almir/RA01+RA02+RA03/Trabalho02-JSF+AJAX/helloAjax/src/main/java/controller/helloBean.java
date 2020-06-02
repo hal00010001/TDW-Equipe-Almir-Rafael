@@ -50,7 +50,7 @@ public class helloBean implements Serializable {
     }
 
     public void setSomeDate(Date someDate) {
-        this.someDate = someDate;
+        this.someDate = someDate;        
     }
         
     public String getSayWelcome(){

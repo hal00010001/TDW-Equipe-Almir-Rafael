@@ -9,7 +9,7 @@
     <h:body>
         <h3>JSF 2.0 + Ajax Hello World Example</h3>
         <h:form>
-            <h:panelGrid columns="2" cellspacing="3">
+            <h:panelGrid columns="2" cellpadding="3">
                 <h:outputText value="Name: " />
                 <h:inputText id="name" value="#{helloBean.name}"></h:inputText>
                 <h:outputText value="Program: " />
@@ -32,7 +32,11 @@
         </h:form>
         <h2><h:outputText id="outputName" value="#{helloBean.sayWelcome}" /></h2>
         <h2><h:outputText id="outputProgram" value="#{helloBean.sayProgram}" /></h2>
-        <h2><h:outputText id="outputDate" value="#{helloBean.someDate}" ><f:convertDateTime pattern="dd-mm-yyyy" /></h:outputText></h2>
+        <h2>
+            <h:outputText id="outputDate" value="#{helloBean.someDate}" >
+                <f:convertDateTime pattern="dd-mm-yyyy" />
+            </h:outputText>
+        </h2>
     </h:body>
 </html>
 
