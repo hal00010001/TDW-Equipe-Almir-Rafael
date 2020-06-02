@@ -29,6 +29,8 @@ public class bookController implements Serializable {
     private final Book book = new Book();
     private String name;
     private String author;
+    private String coAuthor;
+    private String isbn;
     private Integer year;
     private String category;
     private float price;
@@ -63,6 +65,22 @@ public class bookController implements Serializable {
         this.author = author;
     }
 
+    public String getCoAuthor() {
+        return coAuthor;
+    }
+
+    public void setCoAuthor(String coAuthor) {
+        this.coAuthor = coAuthor;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+    
     public Integer getYear() {
         return year;
     }
@@ -89,6 +107,8 @@ public class bookController implements Serializable {
 
     public void emptyVariables() {
         this.author = "";
+        this.coAuthor = "";
+        this.isbn = "";
         this.category = "";
         this.name = "";
         this.price = 0;
@@ -97,6 +117,8 @@ public class bookController implements Serializable {
 
     public String createBook() {
         this.book.setAuthor(this.author);
+        this.book.setCoAuthor(this.coAuthor);
+        this.book.setIsbn(this.isbn);
         this.book.setCategory(this.category);
         this.book.setName(this.name);
         this.book.setPrice(this.price);
