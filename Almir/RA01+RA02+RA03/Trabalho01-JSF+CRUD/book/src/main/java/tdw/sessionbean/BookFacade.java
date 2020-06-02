@@ -17,7 +17,7 @@ import tdw.entities.Book;
 @Stateless
 public class BookFacade extends AbstractFacade<Book> implements BookFacadeLocal {
 
-    @PersistenceContext(unitName = "tdw_book_war_1.0-SNAPSHOTPU")
+    @PersistenceContext(unitName = "tdw_book_war_1.0-SNAPSHOT")
     private EntityManager em;
 
     @Override
