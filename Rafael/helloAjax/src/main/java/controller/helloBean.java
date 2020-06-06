@@ -5,18 +5,10 @@ import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- *
- * @author hal
- */
 @Named(value = "helloBean")
 @SessionScoped
 public class helloBean implements Serializable {
-
-    /**
-     * Creates a new instance of helloBean
-     */
-    
+ 
     private String name;
     private String program;
     private Date someDate;
